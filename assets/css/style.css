@@ -1,4 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+.navbar,
+.navbar .nav-menu,
+.nav-button {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.navbar {
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 1rem 3%; }
+  .navbar a {
+    text-decoration: none;
+    color: white; }
+  .navbar .nav-brand .nav-brand-logo {
+    font-size: 2em;
+    font-weight: 600;
+    color: white; }
+  .navbar .nav-menu {
+    width: 40%;
+    font-size: 1em;
+    font-weight: 400;
+    justify-content: space-between; }
+    @media (max-width: 1024px) {
+      .navbar .nav-menu {
+        width: 50%; } }
+  .navbar .nav-button {
+    justify-content: flex-end; }
+    .navbar .nav-button .nav-button-item {
+      outline: none;
+      border: none;
+      padding: .7rem 3rem;
+      background-color: transparent;
+      border-radius: 30px;
+      border: 2px solid white;
+      font-size: .8em;
+      color: white;
+      cursor: pointer; }
+
 * {
   margin: 0;
   padding: 0;
