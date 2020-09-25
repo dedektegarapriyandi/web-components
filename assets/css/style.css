@@ -75,8 +75,8 @@
     padding: inherit; }
   .navbar .nav-button {
     justify-content: flex-end;
-    animation-duration: .5s;
-    animation-delay: .5s;
+    animation-duration: .3s;
+    animation-delay: .7s;
     animation-fill-mode: backwards; }
     @media (max-width: 900px) {
       .navbar .nav-button {
