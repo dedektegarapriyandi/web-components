@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACQ,6FAAqF;AAO7F,CAAE;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;;AAG1B,IAAK;EACD,WAAW,ECfA,qBAAqB;EDgBhC,SAAS,EAAE,IAAI",
+"sources": ["../sass/master.scss","../sass/_variables.scss"],
+"names": [],
+"file": "style.css"
+}
