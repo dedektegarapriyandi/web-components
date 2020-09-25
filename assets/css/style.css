@@ -76,7 +76,7 @@
   .navbar .nav-button {
     justify-content: flex-end;
     animation-duration: .3s;
-    animation-delay: .7s;
+    animation-delay: .6s;
     animation-fill-mode: backwards; }
     @media (max-width: 900px) {
       .navbar .nav-button {
