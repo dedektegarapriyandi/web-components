@@ -86,14 +86,18 @@
         padding: 1rem 5%; } }
     .navbar .nav-button .nav-button-item {
       outline: none;
-      border: none;
       padding: .7rem 3rem;
       background-color: transparent;
       border-radius: 30px;
       border: 2px solid white;
       font-size: .8em;
       color: white;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all .2s; }
+      .navbar .nav-button .nav-button-item:hover {
+        background-color: white;
+        color: #26a4cb;
+        transform: scale(0.9); }
   .navbar .nav-toggler {
     width: 30px;
     height: 20px;
