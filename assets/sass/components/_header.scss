@@ -1,9 +1,56 @@
 #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 480px;
-    background-color: red;
+    background-image: $background-linear;
+    border-radius: 0 0 40% 40%;
     padding-top: 5rem;
 
     .header-content {
         padding: 0 3%;
+
+        .header-title {
+            color: white;
+            font-weight: 400;
+            font-size: 3em;
+
+            &::after {
+                content: '';
+                display: block;
+                border: 2px solid white;
+                border-radius: 10px;
+                width: 30%;
+                margin: .5rem auto;
+            }
+        }
+
+        .header-form {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .header-form-input {
+                outline: none;
+                border: none;
+                border-radius: 5px 0 0 5px;
+                width: 80%;
+                padding: .8rem;
+                font-weight: 400;
+                font-family: 'Raleway', sans-serif;
+                font-size: 1em;
+                text-transform: capitalize;
+            }
+
+            .header-form-submit {
+                font-size: 1em;
+                padding: .8rem;
+                outline: none;
+                border: none;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+            }
+        }
     }
 }
