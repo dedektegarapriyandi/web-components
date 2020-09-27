@@ -133,8 +133,7 @@
   align-items: center;
   height: 480px;
   background-image: linear-gradient(to right, #2691b3, #26a4cb);
-  border-radius: 0 0 40% 40%;
-  padding-top: 5rem; }
+  border-radius: 0 0 40% 40%; }
   #header .header-content {
     padding: 0 3%; }
     #header .header-content .header-title {
@@ -178,6 +177,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  height: 400vh; }
 
 /*# sourceMappingURL=style.css.map */
