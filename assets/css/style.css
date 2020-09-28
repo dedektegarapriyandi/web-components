@@ -4,6 +4,11 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes borderWidth {
+  from {
+    width: 0; }
+  to {
+    width: 70%; } }
 .fadeIn {
   animation: fadeIn; }
 
@@ -66,14 +71,23 @@
         display: block;
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2); } }
+    .navbar .nav-menu .nav-menu-item:hover::after {
+      content: '';
+      display: block;
+      border: 1px solid #f77145;
+      border-radius: 10px;
+      width: 70%;
+      transition: .2s ease;
+      margin: 5px auto -7px auto;
+      animation: borderWidth .2s ease; }
     .navbar .nav-menu .nav-active::after {
       content: '';
       display: block;
       border: 1px solid #f77145;
       border-radius: 10px;
       width: 70%;
-      margin: .3rem auto -.6rem auto;
-      transition: .2s ease; }
+      transition: .2s ease;
+      margin: 5px auto -7px auto; }
     .navbar .nav-menu .nav-button {
       margin-left: 15%;
       justify-content: flex-end;

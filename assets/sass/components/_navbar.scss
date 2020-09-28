@@ -73,6 +73,18 @@
                     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                 }
             }
+
+            &:hover::after {
+                content: '';
+                display: block;
+                border: 1px solid $orange;
+                border-radius: 10px;
+                width: 70%;
+                transition: .2s ease;
+                margin: 5px auto -7px auto;
+                animation: borderWidth .2s ease;
+            }
+
         }
 
         .nav-active::after {
@@ -81,8 +93,8 @@
             border: 1px solid $orange;
             border-radius: 10px;
             width: 70%;
-            margin: .3rem auto -.6rem auto;
             transition: .2s ease;
+            margin: 5px auto -7px auto;
         }
 
         .nav-button {
