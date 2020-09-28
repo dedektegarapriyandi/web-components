@@ -82,10 +82,11 @@
       .navbar .nav-menu .nav-button .nav-button-item {
         outline: none;
         padding: .7rem 3rem;
-        background-color: transparent;
+        background-color: #ea6b41;
         border-radius: 30px;
-        border: 2px solid white;
-        font-size: .8em;
+        border: none;
+        font-size: .9em;
+        font-weight: 400;
         color: white;
         cursor: pointer;
         transition: all .2s; }
@@ -159,7 +160,6 @@
         width: 80%;
         padding: .8rem;
         font-weight: 400;
-        font-family: 'Raleway', sans-serif;
         font-size: 1em;
         text-transform: capitalize; }
       #header .header-content .header-form .header-form-submit {
@@ -173,10 +173,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif; }
 
 body {
-  font-family: "Raleway", sans-serif;
   font-size: 18px;
   height: 400vh; }
 
