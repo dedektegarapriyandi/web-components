@@ -82,7 +82,7 @@
       .navbar .nav-menu .nav-button .nav-button-item {
         outline: none;
         padding: .7rem 3rem;
-        background-color: #ea6b41;
+        background-color: #f77145;
         border-radius: 30px;
         border: none;
         font-size: .9em;
@@ -91,9 +91,7 @@
         cursor: pointer;
         transition: all .2s; }
         .navbar .nav-menu .nav-button .nav-button-item:hover {
-          background-color: white;
-          color: #26a4cb;
-          transform: scale(0.9); }
+          background-color: #e66a41; }
   .navbar .nav-menu-open {
     opacity: 1;
     width: 100%;
