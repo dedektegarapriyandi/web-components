@@ -74,15 +74,19 @@
                 }
             }
 
-            &:hover::after {
+            &::after {
                 content: '';
                 display: block;
-                border: 1px solid $orange;
+                border-bottom: 2px solid $orange;
                 border-radius: 10px;
-                width: 100%;
                 transition: .2s ease;
+                width: 0;
                 margin: 5px auto -7px auto;
-                animation: borderWidth .2s ease;
+            }
+
+            &:hover::after {
+                width: 100%;
+                border-bottom: 2px solid $orange;
             }
 
         }
@@ -90,7 +94,7 @@
         .nav-active::after {
             content: '';
             display: block;
-            border: 1px solid $orange;
+            border-bottom: 2px solid $orange;
             border-radius: 10px;
             width: 100%;
             transition: .2s ease;
