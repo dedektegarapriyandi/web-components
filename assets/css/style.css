@@ -8,7 +8,7 @@
   from {
     width: 0; }
   to {
-    width: 70%; } }
+    width: 100%; } }
 .fadeIn {
   animation: fadeIn; }
 
@@ -76,7 +76,7 @@
       display: block;
       border: 1px solid #f77145;
       border-radius: 10px;
-      width: 70%;
+      width: 100%;
       transition: .2s ease;
       margin: 5px auto -7px auto;
       animation: borderWidth .2s ease; }
@@ -85,7 +85,7 @@
       display: block;
       border: 1px solid #f77145;
       border-radius: 10px;
-      width: 70%;
+      width: 100%;
       transition: .2s ease;
       margin: 5px auto -7px auto; }
     .navbar .nav-menu .nav-button {
