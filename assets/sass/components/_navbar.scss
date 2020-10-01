@@ -67,7 +67,7 @@
 
             a {
                 @media (max-width:900px) {
-                    padding: 1rem .5rem;
+                    padding: 1rem;
                     display: block;
                     width: 100%;
                     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -77,28 +77,56 @@
             &::after {
                 content: '';
                 display: block;
-                border-bottom: 2px solid $orange;
+                border-bottom: 3px solid $orange;
                 border-radius: 10px;
                 transition: .2s ease;
                 width: 0;
-                margin: 5px auto -7px auto;
+                margin: 5px auto -8px auto;
+
+                @media (max-width:900px) {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                @media (max-width:900px) {
+                    border-left: 3px solid $orange;
+                    margin-left: -3px;
+                    background-color: rgba(0, 0, 0, .1);
+                }
             }
 
             &:hover::after {
                 width: 100%;
-                border-bottom: 2px solid $orange;
-            }
+                border-bottom: 3px solid $orange;
 
+                @media (max-width:900px) {
+                    display: none;
+                }
+            }
         }
 
-        .nav-active::after {
-            content: '';
-            display: block;
-            border-bottom: 2px solid $orange;
-            border-radius: 10px;
-            width: 100%;
-            transition: .2s ease;
-            margin: 5px auto -7px auto;
+        .nav-active {
+            @media (max-width:900px) {
+                border-left: 3px solid $orange;
+                margin-left: -3px;
+                background-color: rgba(0, 0, 0, .1);
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                border-bottom: 3px solid $orange;
+                border-radius: 10px;
+                width: 100%;
+                transition: .2s ease;
+                margin: 5px auto -8px auto;
+
+                @media (max-width:900px) {
+                    display: none;
+                }
+
+            }
         }
 
         .nav-button {
