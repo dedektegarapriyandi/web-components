@@ -6,6 +6,10 @@
     background-image: $background-linear;
     border-radius: 0 0 40% 40%;
 
+    @media(max-width:600px) {
+        border-radius: 0 0 30% 30%;
+    }
+
     .header-content {
         padding: 0 3%;
 
@@ -13,6 +17,10 @@
             color: white;
             font-weight: 400;
             font-size: 3em;
+
+            @media(max-width:600px) {
+                font-size: 2em;
+            }
 
             &::after {
                 content: '';
@@ -36,18 +44,21 @@
                 border-radius: 5px 0 0 5px;
                 width: 80%;
                 padding: .8rem;
-                font-weight: 400;
+                font-weight: 600;
+                color: rgb(75, 75, 75);
                 font-size: 1em;
                 text-transform: capitalize;
             }
 
             .header-form-submit {
                 font-size: 1em;
-                padding: .8rem;
+                padding: .8rem 1rem;
                 outline: none;
                 border: none;
                 border-radius: 0 5px 5px 0;
                 cursor: pointer;
+                background-color: $orange;
+                color: white;
             }
         }
     }

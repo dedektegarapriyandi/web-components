@@ -171,12 +171,18 @@
   height: 480px;
   background-image: linear-gradient(to right, #2691b3, #26a4cb);
   border-radius: 0 0 40% 40%; }
+  @media (max-width: 600px) {
+    #header {
+      border-radius: 0 0 30% 30%; } }
   #header .header-content {
     padding: 0 3%; }
     #header .header-content .header-title {
       color: white;
       font-weight: 400;
       font-size: 3em; }
+      @media (max-width: 600px) {
+        #header .header-content .header-title {
+          font-size: 2em; } }
       #header .header-content .header-title::after {
         content: '';
         display: block;
@@ -195,16 +201,19 @@
         border-radius: 5px 0 0 5px;
         width: 80%;
         padding: .8rem;
-        font-weight: 400;
+        font-weight: 600;
+        color: #4b4b4b;
         font-size: 1em;
         text-transform: capitalize; }
       #header .header-content .header-form .header-form-submit {
         font-size: 1em;
-        padding: .8rem;
+        padding: .8rem 1rem;
         outline: none;
         border: none;
         border-radius: 0 5px 5px 0;
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: #f77145;
+        color: white; }
 
 * {
   margin: 0;
