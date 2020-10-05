@@ -173,7 +173,8 @@
   border-radius: 0 0 40% 40%; }
   @media (max-width: 600px) {
     #header {
-      border-radius: 0 0 30% 30%; } }
+      border-radius: 0 0 0% 0%;
+      height: 390px; } }
   #header .header-content {
     padding: 0 3%; }
     #header .header-content .header-title {
@@ -182,7 +183,7 @@
       font-size: 3em; }
       @media (max-width: 600px) {
         #header .header-content .header-title {
-          font-size: 2em; } }
+          font-size: 1.8em; } }
       #header .header-content .header-title::after {
         content: '';
         display: block;
@@ -205,6 +206,9 @@
         color: #4b4b4b;
         font-size: 1em;
         text-transform: capitalize; }
+        @media (max-width: 600px) {
+          #header .header-content .header-form .header-form-input {
+            font-size: .7em; } }
       #header .header-content .header-form .header-form-submit {
         font-size: 1em;
         padding: .8rem 1rem;
@@ -214,6 +218,9 @@
         cursor: pointer;
         background-color: #f77145;
         color: white; }
+        @media (max-width: 600px) {
+          #header .header-content .header-form .header-form-submit {
+            font-size: .7em; } }
 
 * {
   margin: 0;

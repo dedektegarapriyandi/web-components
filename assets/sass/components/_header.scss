@@ -7,7 +7,8 @@
     border-radius: 0 0 40% 40%;
 
     @media(max-width:600px) {
-        border-radius: 0 0 30% 30%;
+        border-radius: 0 0 0% 0%;
+        height: 390px;
     }
 
     .header-content {
@@ -19,7 +20,7 @@
             font-size: 3em;
 
             @media(max-width:600px) {
-                font-size: 2em;
+                font-size: 1.8em;
             }
 
             &::after {
@@ -48,6 +49,10 @@
                 color: rgb(75, 75, 75);
                 font-size: 1em;
                 text-transform: capitalize;
+
+                @media(max-width:600px) {
+                    font-size: .7em;
+                }
             }
 
             .header-form-submit {
@@ -59,6 +64,10 @@
                 cursor: pointer;
                 background-color: $orange;
                 color: white;
+
+                @media(max-width:600px) {
+                    font-size: .7em;
+                }
             }
         }
     }
